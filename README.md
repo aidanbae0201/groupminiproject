@@ -1,7 +1,8 @@
 # groupminiproject
 OSSL 2분반 조별과제
 
-![image](https://user-images.githubusercontent.com/74346159/116879756-02ddef80-ac5c-11eb-8aa9-0510385de9ce.png = 400x400)
+![image](https://user-images.githubusercontent.com/74346159/116880454-002fca00-ac5d-11eb-8955-e14f9680f206.png)
+
 
 히딩크 대여 시간 관리 프로그램
 히딩크 필드 대여를 스프레드시트가 아닌 CRUD 프로그램으로 구현해보고자 했습니다.
