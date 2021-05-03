@@ -1,7 +1,8 @@
 # groupminiproject
 OSSL 2분반 조별과제
 
-![image](https://user-images.githubusercontent.com/74346159/116880454-002fca00-ac5d-11eb-8955-e14f9680f206.png)
+![image](https://user-images.githubusercontent.com/74346159/116880564-1fc6f280-ac5d-11eb-90eb-deb474367823.png)
+
 
 
 히딩크 대여 시간 관리 프로그램
