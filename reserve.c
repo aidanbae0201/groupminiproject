@@ -2,7 +2,7 @@
 #include <string.h>
 #include "reserve.h"
 
-void printCalendar(Reserve *r[], int count, int month)
+void printCalendar(Reserve *r[], int count, int month) // Parameter로 Reserve *r[]을 받긴 했는데 이걸 어디에서 사용하면 될지 생각
 {
     int dates[31];
     if(month==1 || month==3 || month==5 || month==7 || month==8 || month==10 || month==12)
@@ -20,31 +20,31 @@ void printCalendar(Reserve *r[], int count, int month)
     printf("|");
     
 }
-void searchNop(Reserve *r[],int count)
+void searchNop(Reserve *r[],int count) // 예약한 사람의 수를 입력받아 리스트를 뽑는 함수
 {
 
 }
-void searchStid(Reserve *r[],int count)
+void searchStid(Reserve *r[],int count) // 학번을 검색해서 그 사람의 예약 이력 확인
 {
 
 }
-void saveFile(Reserve *r[], int count)
+void saveFile(Reserve *r[], int count) // 파일 저장 함수
 {
 
 }
-void addReserve(Reserve *r[], int count)
+void addReserve(Reserve *r[], int count) // 예약자 생성
 {
 
 }
-void loadFile(Reserve *r[],int count)
+void loadFile(Reserve *r[],int count) // 파일 불러오기 함수
 {
 
 }
-void updateReserve(Reserve *r[],int count)
+void updateReserve(Reserve *r[],int count) // 업데이트 함수
 {
 
 }
-int chooseNo(Reserve *r[],int count)
+int chooseNo(Reserve *r[],int count) // 
 {
 
 }
@@ -54,5 +54,5 @@ void loadMenu()
 }
 void checkNoshow(Reserve *r[],int count)
 {
-    
+
 }
