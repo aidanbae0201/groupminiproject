@@ -48,9 +48,21 @@ int chooseNo(Reserve *r[],int count) //
 {
 
 }
-void loadMenu()
+int loadMenu()
 {
-
+    int menu;
+    printf("---------------------------------\n");
+    printf("| Hiddink Field Reservation Service |\n");
+    printf("---------------------------------\n");
+    printf("1. View Calendar");
+    printf("2. Add Reservation\n");
+    printf("3. Search Student ID\n");
+    printf("4. Search Number of People\n");
+    printf("5. Check No Show\n");
+    printf("6. Save File\n");
+    printf("0. Exit\n");
+    scanf("%d",&menu);
+    return menu;
 }
 void checkNoshow(Reserve *r[],int count)
 {
