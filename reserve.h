@@ -6,11 +6,11 @@ typedef struct Reserve{
     int inith; // 시작시간
     int endh; // 마치는 시간
 }Reserve;
-void printCalendar(Reserve *r[], int count, int month);
+void printCalendar(Reserve *r[], int count);
 void searchNop(Reserve *r[],int count);
 void searchStid(Reserve *r[],int count);
 void saveFile(Reserve *r[], int count);
-void addReserve(Reserve *r[], int count);
+int addReserve(Reserve *r[]);
 void loadFile(Reserve *r[],int count);
 void updateReserve(Reserve *r[],int count);
 int chooseNo(Reserve *r[],int count);
