@@ -25,6 +25,23 @@ int main()
         {
             printCalendar(r,count);
         }
+        if(menu==3)
+        {
+
+        }
+        if(menu==4)
+        {
+
+        }
+        if(menu==5)
+        {
+
+        }
+        if(menu==6)
+        {
+
+        }
+        
     }
     
     
