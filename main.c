@@ -23,15 +23,15 @@ int main()
         }
         if(menu==1)
         {
-            printCalendar(r,count);
+            printCalendar(r,index);
         }
         if(menu==3)
         {
-
+            searchStid(r,index);
         }
         if(menu==4)
         {
-
+            searchNop(r,index);
         }
         if(menu==5)
         {
