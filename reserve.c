@@ -25,7 +25,6 @@ void printCalendar(Reserve *r[], int count) // Parameter로 Reserve *r[]을 받�
 }
 void searchNop(Reserve *r[],int count) // 예약한 사람의 수를 입력받아 리스트를 뽑는 함수
 {
-
 }
 void searchStid(Reserve *r[],int count) // 학번을 검색해서 그 사람의 예약 이력 확인
 {
@@ -35,8 +34,12 @@ void saveFile(Reserve *r[], int count) // 파일 저장 함수
 {
 
 }
-int addReserve(Reserve *r[]) // 예약자 생성
+int addReserve(Reserve *r) // 예약자 생성
 {
+    printf("Insert student id: ");
+    scanf("%s",r->stid);
+    printf("Insert number of players: ");
+    scanf("%d",&r->nop);
     return 1;
 }
 void loadFile(Reserve *r[],int count) // 파일 불러오기 함수
