@@ -10,7 +10,7 @@ void printCalendar(Reserve *r[], int count);
 void searchNop(Reserve *r[],int count);
 void searchStid(Reserve *r[],int count);
 void saveFile(Reserve *r[], int count);
-int addReserve(Reserve *r[]);
+int addReserve(Reserve *r);
 void loadFile(Reserve *r[],int count);
 void updateReserve(Reserve *r[],int count);
 int chooseNo(Reserve *r[],int count);
