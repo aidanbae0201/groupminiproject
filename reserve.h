@@ -16,5 +16,5 @@ void updateReserve(Reserve *r[],int count);
 int chooseNo(Reserve *r[],int count);
 int loadMenu();
 void checkNoshow(Reserve *r[],int count);
-int deleteReserve(int num,Reserve *r[],int count);
+void deleteReserve(int num,Reserve *r);
 
