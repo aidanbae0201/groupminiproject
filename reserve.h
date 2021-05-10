@@ -12,7 +12,7 @@ void searchStid(Reserve *r[],int count);
 void saveFile(Reserve *r[], int count);
 int addReserve(Reserve *r);
 void loadFile(Reserve *r[],int count);
-void updateReserve(Reserve *r[],int count);
+void updateReserve(Reserve *r);
 int chooseNo(Reserve *r[],int count);
 int loadMenu();
 void checkNoshow(Reserve *r[],int count);
