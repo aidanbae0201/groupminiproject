@@ -87,7 +87,7 @@ void updateReserve(Reserve *r) // 업데이트 함수
 	scanf("%s", r->stid);
 	printf("Insert number of players: ");
 	scanf("%d", &r->nop);
-	printf("Insert date of reservation:");
+	printf("Insert month of reservation:");
 	scanf("%d", &r->month);
 	printf("Insert date of reservation (Month: %d)", r->month);
 	scanf("%d", &r->date);
@@ -116,7 +116,7 @@ int chooseNo(Reserve *r[],int count) //
     listReserve(r,count);
 	int no;
 	// 예약 현황 확인
-	printf("Select Number(Type 0 to cancel):  ");
+	printf("Select Number(Type 0 to go back):  ");
 	scanf("%d", &no);
 	return no;
 
@@ -152,5 +152,16 @@ void readReserve(Reserve r)
 }
 void listReserve(Reserve *r[],int count)
 {
+ printf("\nNo studentID noPlayers month day startAt endAt\n");
+ printf("=============================================\n");
+ for(int i = 0; i < count; i++)
+ {
+	 if(r[i] == NULL)
+		 continue;
+	 printf("%-2d", i+1);
+	 readReserve(*r[i]);
+ }
+ printf("\n");
 
+ 
 }
