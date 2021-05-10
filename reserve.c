@@ -113,6 +113,7 @@ void deleteReserve(int num, Reserve *r[],int* count)
 
 int chooseNo(Reserve *r[],int count) // 
 {
+    listReserve(r,count);
 	int no;
 	// 예약 현황 확인
 	printf("Select Number(Type 0 to cancel):  ");
