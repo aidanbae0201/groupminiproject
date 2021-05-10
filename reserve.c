@@ -20,8 +20,35 @@ void printCalendar(Reserve *r[], int count) // Parameter로 Reserve *r[]을 받�
                 printf("|\n");
             printf("| %2d",dates[i]);
         }
-    }
     printf("|");
+    }
+    if(month == 2)
+    {
+        printf("--------------%d--------------\n",month);
+        printf("|SUN|MON|TUE|WED|THU|FRI|SAT|\n");
+        for(int i=0;i<28;i++)
+            dates[i]=i+1;
+        for(int i=0;i<28;i++){
+            if(i!=0 && i%7==0)
+                printf("|\n");
+            printf("| %2d",dates[i]);
+        }
+    printf("|");
+    }
+    else
+    {
+        printf("--------------%d--------------\n",month);
+        printf("|SUN|MON|TUE|WED|THU|FRI|SAT|\n");
+        for(int i=0;i<30;i++)
+            dates[i]=i+1;
+        for(int i=0;i<30;i++){
+            if(i!=0 && i%7==0)
+                printf("|\n");
+            printf("| %2d",dates[i]);
+        }
+    printf("|");
+    }
+    printf("\n");
     
 }
 void searchNop(Reserve *r[],int count) // 예약한 사람의 수를 입력받아 리스트를 뽑는 함수
