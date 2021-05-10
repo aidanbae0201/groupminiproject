@@ -108,6 +108,7 @@ int loadMenu()
     printf("7. Cancel Reservation\n");
     printf("8. Change Reservation\n");
     printf("0. Exit\n");
+    printf("CHOOSE MENU: ");
     scanf("%d",&menu);
     return menu;
 }
