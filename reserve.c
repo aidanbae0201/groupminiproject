@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "reserve.h"
+#include <stdlib.h>
 
 void printCalendar(Reserve *r[], int count) // Parameter로 Reserve *r[]을 받긴 했는데 이걸 어디에서 사용하면 될지 생각
 {
