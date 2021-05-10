@@ -8,9 +8,10 @@ int main()
     int count=0;
     int index=0;
     Reserve *r[100];
+    int menu;
     while(1)
     {
-        int menu = loadMenu();
+        menu = loadMenu();
         if(menu==0)
         {
             printf("EXITED!");
