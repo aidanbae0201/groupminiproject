@@ -22,7 +22,7 @@ void printCalendar(Reserve *r[], int count) // Parameter로 Reserve *r[]을 받�
         }
     printf("|");
     }
-    if(month == 2)
+    else if(month == 2)
     {
         printf("--------------%d--------------\n",month);
         printf("|SUN|MON|TUE|WED|THU|FRI|SAT|\n");
