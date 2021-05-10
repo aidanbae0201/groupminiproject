@@ -92,7 +92,7 @@ int loadMenu()
     printf("---------------------------------\n");
     printf("| Hiddink Field Reservation Service |\n");
     printf("---------------------------------\n");
-    printf("1. View Calendar");
+    printf("1. View Calendar\n");
     printf("2. Add Reservation\n");
     printf("3. Search Student ID\n");
     printf("4. Search Number of People\n");
