@@ -50,7 +50,7 @@ int main()
        if (menu == 7)
        {
 		int no;
-		no = chooseNo(r, index);
+		no = getstudentid(r, index);
 		if(no == 0){
 			printf("Update canceled.");
             continue;
@@ -61,7 +61,7 @@ int main()
         if(menu == 8)
         { 
             int no;
-            no = chooseNo(r, index);
+            no = getstudentid(r, index);
             if(no == 0){
                 printf("Cancellation Denied.");
                 continue;
