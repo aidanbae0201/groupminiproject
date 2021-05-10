@@ -53,7 +53,7 @@ void loadFile(Reserve *r[],int count) // 파일 불러오기 함수
 {
 	
 }
-int updateReserve(Reserve *r) // 업데이트 함수
+void updateReserve(Reserve *r) // 업데이트 함수
 {
 
 	printf("Insert student id: ");
