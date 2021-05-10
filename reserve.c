@@ -55,9 +55,19 @@ void updateReserve(Reserve *r) // 업데이트 함수
 	scanf("%d", &r->nop);
 }
 
-void deleteReserve(Reserve *r[], int count)
+void deleteReserve(int num, Reserve *r[],int* count)
 {
-	r->nop == -1;
+    int deleteok;
+    printf("Are you sure you want to delete? (1: delete) ");
+    scanf("%d",&deleteok);
+    if(deleteok == 1)
+    {
+        if(r[num-1]) free(r[num-1]);
+        r[num] = NULL;
+        (*count)--;
+        printf("==> DELETED\n");
+
+    }
 }
 
 int chooseNo(Reserve *r[],int count) // 
