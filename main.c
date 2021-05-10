@@ -12,7 +12,11 @@ int main()
     {
         int menu = loadMenu();
         if(menu==0)
+        {
+            printf("EXITED!");
             break;
+        }
+            
         if(menu==3 || menu==4 || menu==5 || menu==6)
         {
             if(count==0) continue;
