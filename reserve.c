@@ -66,7 +66,6 @@ void updateReserve(Reserve *r) // 업데이트 함수
 	scanf("%d", &r->date);
 	printf("Insert start time and end time of reservation (Ex: 14-16): ");
 	scanf("%d-%d", &r->inith, &r->endh);
-	return 1;
 
 }
 
