@@ -145,3 +145,11 @@ void checkNoshow(Reserve *r[],int count)
 
 
 }
+void readReserve(Reserve r)
+{
+    printf("%s %d %d %d %d-%d\n",r.stid,r.nop,r.month,r.date,r.inith,r.endh);
+}
+void listReserve(Reserve *r[],int count)
+{
+
+}
