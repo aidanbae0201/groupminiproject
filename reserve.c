@@ -78,7 +78,7 @@ void deleteReserve(int num, Reserve *r[],int* count)
     if(deleteok == 1)
     {
         if(r[num-1]) free(r[num-1]);
-        r[num] = NULL;
+        r[num-1] = NULL;
         (*count)--;
         printf("==> DELETED\n");
 
