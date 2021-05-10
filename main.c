@@ -8,9 +8,9 @@ int main()
     int count=0;
     int index=0;
     Reserve *r[100];
-    int menu = loadMenu();
     while(1)
     {
+        int menu = loadMenu();
         if(menu==0)
             break;
         if(menu==3 || menu==4 || menu==5 || menu==6)
