@@ -52,13 +52,21 @@ void loadFile(Reserve *r[],int count) // 파일 불러오기 함수
 {
 	
 }
-void updateReserve(Reserve *r) // 업데이트 함수
+int updateReserve(Reserve *r) // 업데이트 함수
 {
 
 	printf("Insert student id: ");
 	scanf("%s", r->stid);
 	printf("Insert number of players: ");
 	scanf("%d", &r->nop);
+	printf("Insert date of reservation:");
+	scanf("%d", &r->month);
+	printf("Insert date of reservation (Month: %d)", r->month);
+	scanf("%d", &r->date);
+	printf("Insert start time and end time of reservation (Ex: 14-16): ");
+	scanf("%d-%d", &r->inith, &r->endh);
+	return 1;
+
 }
 
 void deleteReserve(int num, Reserve *r[],int* count)
