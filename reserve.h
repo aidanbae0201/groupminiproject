@@ -13,7 +13,7 @@ void saveFile(Reserve *r[], int count);
 int addReserve(Reserve *r);
 void loadFile(Reserve *r[],int count);
 void updateReserve(Reserve *r);
-int getstudentid(Reserve *r[],int count);
+int getStudentid(Reserve *r[],int count);
 int loadMenu();
 void checkNoshow(Reserve *r[],int count);
 void deleteReserve(int num,Reserve *r[],int* count);

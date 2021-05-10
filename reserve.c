@@ -111,7 +111,7 @@ void deleteReserve(int num, Reserve *r[],int* count)
     }
 }
 
-int getstudentid(Reserve *r[],int count) // 
+int getStudentid(Reserve *r[],int count) // 
 {
 	int no;
 	// 예약 현황 확인
