@@ -44,14 +44,29 @@ int addReserve(Reserve *r) // 예약자 생성
 }
 void loadFile(Reserve *r[],int count) // 파일 불러오기 함수
 {
-
+	
 }
-void updateReserve(Reserve *r[],int count) // 업데이트 함수
+void updateReserve(Reserve *r) // 업데이트 함수
 {
 
+	printf("Insert student id: ");
+	scanf("%s", r->stid);
+	printf("Insert number of players: ");
+	scanf("%d", &r->nop);
 }
+
+void deleteReserve(Reserve *r[], int count)
+{
+	r->nop == -1;
+}
+
 int chooseNo(Reserve *r[],int count) // 
 {
+	int no;
+	// 예약 현황 확인
+	printf("Select Number(Type 0 to cancel):  ");
+	scanf("%d", &no);
+	return no;
 
 }
 int loadMenu()
@@ -66,11 +81,15 @@ int loadMenu()
     printf("4. Search Number of People\n");
     printf("5. Check No Show\n");
     printf("6. Save File\n");
+    printf("7. Cancel Reservation\n");
+    printf("8. Change Reservation\n");
     printf("0. Exit\n");
     scanf("%d",&menu);
     return menu;
 }
 void checkNoshow(Reserve *r[],int count)
 {
+
+
 
 }
