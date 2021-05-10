@@ -51,15 +51,15 @@ int main()
 		else 
 			updateReserve(r[no-1]);
        }
-	if(menu == 8)
-	{ 
-		int no;
-		no = chooseNo(r, index);
-		if(no == 0) 
-			printf("Cancellation Denied.");
-		else 
-			deleteReserve(no,r,&count);
-       }
-
+        if(menu == 8)
+        { 
+            int no;
+            no = chooseNo(r, index);
+            if(no == 0) 
+                printf("Cancellation Denied.");
+            else 
+                deleteReserve(no,r,&count);
+        }
+    }
     return 0;
 }
