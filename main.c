@@ -58,7 +58,7 @@ int main()
 		if(no == 0) 
 			printf("Cancellation Denied.");
 		else 
-			deleteReserve(no,r[no-1],&count);
+			deleteReserve(no,r,&count);
        }
 
     return 0;
