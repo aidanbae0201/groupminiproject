@@ -41,16 +41,24 @@ int main()
         {
 
         }
-        
-    }
-    
-    
-
-
-
-
-
-
+       if (menu == 7)
+       {
+		int no;
+		no = chooseNo(r, index);
+		if(no == 0) 
+			printf("Update canceled.");
+		else 
+			updateReserve(r[no-1]);
+       }
+	if(menu == 8)
+	{ 
+		int no;
+		no = chooseNo(r, index);
+		if(no == 0) 
+			printf("Cancellation Denied.");
+		else 
+			deleteReserve(r[no-1]);
+       }
 
     return 0;
 }
