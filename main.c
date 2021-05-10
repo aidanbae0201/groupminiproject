@@ -46,8 +46,10 @@ int main()
        {
 		int no;
 		no = chooseNo(r, index);
-		if(no == 0) 
+		if(no == 0){
 			printf("Update canceled.");
+            continue;
+        }
 		else 
 			updateReserve(r[no-1]);
        }
@@ -55,8 +57,10 @@ int main()
         { 
             int no;
             no = chooseNo(r, index);
-            if(no == 0) 
+            if(no == 0){
                 printf("Cancellation Denied.");
+                continue;
+            }
             else 
                 deleteReserve(no,r,&count);
         }
