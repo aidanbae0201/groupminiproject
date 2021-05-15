@@ -9,6 +9,7 @@ int main()
     int index=0;
     Reserve *r[100];
     int menu;
+    //count = loadFile(r);
     while(1)
     {
         menu = loadMenu();
@@ -18,7 +19,7 @@ int main()
             break;
         }
             
-        if(menu==3 || menu==4 || menu==5 || menu==6)
+        if(menu==3 || menu==4 || menu==5 || menu==6 || menu == 7 || menu == 8)
         {
             if(count==0) continue;
         }
@@ -45,7 +46,7 @@ int main()
         }
         if(menu==6)
         {
-
+		saveFile(r, index);
         }
        if (menu == 8)
        {

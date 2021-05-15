@@ -11,7 +11,7 @@ void searchNop(Reserve *r[],int count);
 void searchStid(Reserve *r[],int count);
 void saveFile(Reserve *r[], int count);
 int addReserve(Reserve *r);
-void loadFile(Reserve *r[],int count);
+int loadFile(Reserve *r[]);
 void updateReserve(Reserve *r);
 int chooseNo(Reserve *r[],int count);
 int loadMenu();
