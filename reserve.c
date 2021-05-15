@@ -95,7 +95,7 @@ int  loadFile(Reserve *r[]) // 파일 불러오기 함수
 	int i = 0;
 	FILE *fp;
 	fp = fopen("reserve.txt", "rt");
-	for(; i < 100; i++)
+	for(; i < 100; i++) // 이거 for문 말고 while문으로 하는게 더 효율적이지 않을까요?
 	{
 		fscanf(fp, "%s", r[i]->stid);
 		if(feof(fp))
