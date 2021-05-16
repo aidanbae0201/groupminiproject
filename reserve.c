@@ -53,11 +53,45 @@ void printCalendar(Reserve *r[], int count) // Parameter로 Reserve *r[]을 받�
 }
 void searchNop(Reserve *r[],int count) // 예약한 사람의 수를 입력받아 리스트를 뽑는 함수
 {
-    chooseNo(r,count);
+	int search = 0;
+   	printf("Number of players : ");
+   	scanf("%d", &search);
+	
+ 	printf("\nNo studentID noPlayers month day startAt endAt\n");
+ 	printf("=============================================\n");
+	for(int i = 0; i < count; i++)
+ 	{
+		if(r[i] == NULL)
+			continue;
+	 	if(r[i]->nop ==  search)
+		{
+			printf("%-2d", i+1);
+	 		readReserve(*r[i]);
+		}
+	
+	}
+	//chooseNo(r, count); // ??
 }
 void searchStid(Reserve *r[],int count) // 학번을 검색해서 그 사람의 예약 이력 확인
 {
-    chooseNo(r,count);
+	char search[20];
+   	printf("Student id : ");
+   	scanf("%s", search);
+	
+ 	printf("\nNo studentID noPlayers month day startAt endAt\n");
+ 	printf("=============================================\n");
+	for(int i = 0; i < count; i++)
+ 	{
+		if(r[i] == NULL)
+			continue;
+	 	if(strstr(r[i]->stid, search))
+				{
+			printf("%-2d", i+1);
+	 		readReserve(*r[i]);
+		}
+	
+	}
+	//chooseNo(r, count); // ??
 }
 void saveFile(Reserve *r[], int count) // 파일 저장 함수
 {
@@ -95,7 +129,7 @@ int  loadFile(Reserve *r[]) // 파일 불러오기 함수
 	int i = 0;
 	FILE *fp;
 	fp = fopen("reserve.txt", "rt");
-	for(; i < 100; i++) // 이거 for문 말고 while문으로 하는게 더 효율적이지 않을까요?
+	while(1)
 	{
 		fscanf(fp, "%s", r[i]->stid);
 		if(feof(fp))
