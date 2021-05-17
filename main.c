@@ -9,7 +9,8 @@ int main()
     int index=0;
     Reserve *r[100];
     int menu;
-    //count = loadFile(r);
+    count = loadFile(r);
+    index = count;
     while(1)
     {
         menu = loadMenu();
