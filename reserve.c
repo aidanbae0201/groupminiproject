@@ -196,7 +196,7 @@ int loadMenu()
     printf("2. Add Reservation\n");
     printf("3. Search Student ID\n");
     printf("4. Search Number of People\n");
-    printf("5. Check No Show\n");
+    printf("5. List Reservations\n");
     printf("6. Save File\n");
     printf("7. Cancel Reservation\n");
     printf("8. Change Reservation\n");
@@ -204,12 +204,6 @@ int loadMenu()
     printf("CHOOSE MENU: ");
     scanf("%d",&menu);
     return menu;
-}
-void checkNoshow(Reserve *r[],int count)
-{
-
-
-
 }
 void readReserve(Reserve r)
 {

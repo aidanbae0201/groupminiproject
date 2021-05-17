@@ -15,7 +15,6 @@ int loadFile(Reserve *r[]);
 void updateReserve(Reserve *r);
 int chooseNo(Reserve *r[],int count);
 int loadMenu();
-void checkNoshow(Reserve *r[],int count);
 void deleteReserve(int num,Reserve *r[],int* count);
 void listReserve(Reserve *r[],int count);
 void readReserve(Reserve r);

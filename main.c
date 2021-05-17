@@ -43,7 +43,7 @@ int main()
         }
         if(menu==5)
         {
-
+            listReserve(r,index);
         }
         if(menu==6)
         {
