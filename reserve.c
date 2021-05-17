@@ -125,11 +125,9 @@ int addReserve(Reserve *r) // 예약자 생성
 }
 int  loadFile(Reserve *r[]) // 파일 불러오기 함수
 {
-	int cnt = 0;
-	int i = 0;
-	FILE *fp;
-	fp = fopen("reserve.txt", "rt");
-	while(1)
+	int cnt = 0, i = 0;
+	FILE *fp = fopen("reserve.txt", "rt");
+	for(; i < 100; i++)
 	{
 		fscanf(fp, "%s", r[i]->stid);
 		if(feof(fp))
@@ -139,10 +137,12 @@ int  loadFile(Reserve *r[]) // 파일 불러오기 함수
 		fscanf(fp, "%d", &r[i]->date);
 		fscanf(fp, "%d", &r[i]->inith);
 		fscanf(fp, "%d", &r[i]->endh);
+
 	}
 	fclose(fp);
 	printf("=> File loaded\n");
-	return i; // return count (number of reservation)
+	cnt = i;
+	return cnt; // return count (number of reservation)
 }
 void updateReserve(Reserve *r) // 업데이트 함수
 {
