@@ -70,7 +70,7 @@ void searchNop(Reserve *r[],int count) // 예약한 사람의 수를 입력받�
 		}
 	
 	}
-	//chooseNo(r, count); // ??
+	
 }
 void searchStid(Reserve *r[],int count) // 학번을 검색해서 그 사람의 예약 이력 확인
 {
@@ -91,7 +91,7 @@ void searchStid(Reserve *r[],int count) // 학번을 검색해서 그 사람의 
 		}
 	
 	}
-	//chooseNo(r, count); // ??
+	
 }
 void saveFile(Reserve *r[], int count) // 파일 저장 함수
 {
@@ -125,20 +125,21 @@ int addReserve(Reserve *r) // 예약자 생성
 }
 int  loadFile(Reserve *r[]) // 파일 불러오기 함수
 {
-	int cnt = 0, i = 0;
-	FILE *fp = fopen("reserve.txt", "rt");
-	for(; i < 100; i++)
-	{
-		fscanf(fp, "%s", r[i]->stid);
-		if(feof(fp))
-			break;
-		fscanf(fp, "%d", &r[i]->nop);
-		fscanf(fp, "%d", &r[i]->month);
-		fscanf(fp, "%d", &r[i]->date);
-		fscanf(fp, "%d", &r[i]->inith);
-		fscanf(fp, "%d", &r[i]->endh);
-
-	}
+	int cnt = 0;
+    int i=0;
+	FILE *fp;
+    fp = fopen("reserve.txt", "rt");
+    if(fp==NULL)
+        printf("===> NO FILE\n");
+    else{
+        while(!(feof(fp)))
+        {
+            r[i] = (Reserve*)malloc(sizeof(Reserve));
+            int result = fscanf(fp,"%s %d %d %d %d %d", r[i]->stid,&r[i]->nop,&r[i]->month,&r[i]->date,&r[i]->inith,&r[i]->endh);
+            if(result<1) break;
+            i++;
+        }
+    }
 	fclose(fp);
 	printf("=> File loaded\n");
 	cnt = i;
