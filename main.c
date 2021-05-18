@@ -47,7 +47,7 @@ int main()
         }
         if(menu==6)
         {
-		saveFile(r, index);
+		    saveFile(r, index);
         }
        if (menu == 8)
        {
